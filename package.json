@@ -1,16 +1,16 @@
 {
-  "name": "eslint-config-airbnb-typescript-prettier",
+  "name": "eslint-config-airbnb-base-typescript-prettier",
   "version": "2.1.1",
-  "description": "Airbnb's ESLint config with TypeScript and Prettier support",
+  "description": "Airbnb's *base* ESLint config with TypeScript and Prettier support",
   "main": "index.js",
   "scripts": {
-    "test": "eslint --ext .tsx,ts test/",
+    "test": "eslint --ext .ts test/",
     "release": "npm test && standard-version",
     "release:dryrun": "standard-version --dry-run"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/toshi-toma/eslint-config-airbnb-typescript-prettier.git"
+    "url": "https://github.com/datacrafts-io/eslint-config-airbnb-base-typescript-prettier"
   },
   "engines": {
     "node": ">=10"
@@ -21,22 +21,24 @@
     "typescript",
     "prettier"
   ],
-  "author": "toshi-toma",
+  "author": {
+    "name": "Yaroslav Casper",
+    "email": "ilovewindows96@gmail.com",
+    "url": "https://github.com/cxsper"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier/issues"
+    "url": "https://github.com/datacrafts-io/eslint-config-airbnb-base-typescript-prettier/issues"
   },
-  "homepage": "https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier#readme",
+  "homepage": "https://github.com/datacrafts-io/eslint-config-airbnb-base-typescript-prettier#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.1.0",
     "@typescript-eslint/parser": "^2.1.0",
-    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.2.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^3.0.0"
+    "eslint-plugin-prettier": "^3.1.0"
   },
   "peerDependencies": {
     "eslint": "^5.16.0 || ^6.8.0",
@@ -44,7 +46,6 @@
     "typescript": ">=3.2.1 <3.7.4"
   },
   "devDependencies": {
-    "@types/react": "16.9.32",
     "eslint": "6.8.0",
     "prettier": "1.19.1",
     "react": "16.13.1",

@@ -12,14 +12,12 @@ module.exports = {
     es6: true
   },
   extends: [
-    "airbnb",
-    "airbnb/hooks",
+    "airbnb-base",
     "plugin:@typescript-eslint/recommended",
     "prettier",
-    "prettier/react",
     "prettier/@typescript-eslint"
   ],
-  plugins: ["react", "jsx-a11y", "import", "prettier", "@typescript-eslint"],
+  plugins: ["jsx-a11y", "import", "prettier", "@typescript-eslint"],
   globals: {},
   rules: {
     // prettier
@@ -31,9 +29,6 @@ module.exports = {
     "@typescript-eslint/prefer-interface": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
-    // React
-    "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
-    "react/prop-types": ["off", {}],
     // import
     "import/extensions": [
       "error",
