@@ -1,9 +1,8 @@
 # eslint-config-airbnb-base-typescript-prettier
 
 [![npm version][npm-image]][npm-url]
-![License][license]
 
-Airbnb's **base** ESLint config with TypeScript and Prettier support.
+Airbnb's [**base**](https://www.npmjs.com/package/eslint-config-airbnb-base) ESLint config with TypeScript and Prettier support.
 
 [Always up-to-date](https://github.com/wei/pull) with it's
 [upstream](https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier).
@@ -29,4 +28,3 @@ Open source [licensed as MIT](https://github.com/datacrafts-io/eslint-config-air
 
 [npm-image]: https://img.shields.io/npm/v/eslint-config-airbnb-base-typescript-prettier.svg
 [npm-url]: https://npmjs.org/package/eslint-config-airbnb-base-typescript-prettier
-[license]: https://img.shields.io/npm/l/eslint-config-airbnb-base-typescript-prettier.svg
