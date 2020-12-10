@@ -4,18 +4,18 @@ module.exports = {
     sourceType: "module",
     project: "./tsconfig.json",
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   env: {
     browser: true,
-    es6: true
+    es6: true,
   },
   extends: [
     "airbnb-base",
     "plugin:@typescript-eslint/recommended",
     "prettier",
-    "prettier/@typescript-eslint"
+    "prettier/@typescript-eslint",
   ],
   plugins: ["jsx-a11y", "import", "prettier", "@typescript-eslint"],
   globals: {},
@@ -29,6 +29,11 @@ module.exports = {
     "@typescript-eslint/prefer-interface": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
+    // v4 changes
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
     // import
     "import/extensions": [
       "error",
@@ -38,16 +43,16 @@ module.exports = {
         mjs: "never",
         jsx: "never",
         ts: "never",
-        tsx: "never"
-      }
-    ]
+        tsx: "never",
+      },
+    ],
   },
   settings: {
     "import/resolver": {
       node: {
-        extensions: [".js", ".ts", ".jsx", ".tsx", ".json"]
-      }
+        extensions: [".js", ".ts", ".jsx", ".tsx", ".json"],
+      },
     },
-    "import/extensions": [".js", ".ts", ".mjs", ".jsx", ".tsx"]
-  }
+    "import/extensions": [".js", ".ts", ".mjs", ".jsx", ".tsx"],
+  },
 };
